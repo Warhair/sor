@@ -1,0 +1,132 @@
+body{
+    box-sizing: border-box;
+    background-image: url("/design/teglafal.jpg");
+    color: beige;
+    font-size: 10pt;
+    font-family: "Arial", Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    
+}
+main{
+    margin: auto;
+    width: 80%;
+    max-height: 1000px;
+    background-color: #333333;
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "h h"
+    "a n"
+    "f f";
+    box-shadow: 20px 20px 50px 15px rgb(250, 243, 243);
+    
+
+}
+nav{
+    grid-area: n; 
+}
+header{
+    background-image: url("/design/beer-new_401732638.jpg");
+    height: 300px;
+    overflow: auto;
+    background-size: cover;
+    font-weight: bold;
+    font-family: "Garamond";
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: 4px;
+    padding-top: 30px;
+    padding-left: 30px;
+    grid-area: h;
+    width: 100%;
+}
+header h1{
+    color: white;
+    margin-left: 30px;
+}
+.navul li{
+    list-style-type: none;
+    margin: 1px;
+    border: 1px;
+    border-color: wheat;
+    border-style: solid;
+    
+    
+}
+.navul li:hover{
+    background-color: aliceblue;
+}
+a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+a:hover {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+article{
+    text-align: justify;
+    font-size: 10px;
+    grid-area: a;
+    background-color: black;
+
+}
+article h1{
+    font-size: 15px;
+}
+.tartalom li{
+    list-style-type: square;
+
+}
+.img{
+text-align: left;
+}
+footer{
+    grid-area: f; 
+    text-align: center;
+    background-color: lightslategray;
+}
+.tartalom{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+@media only screen and (max-width: 700px) {
+    main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "h" 
+        "n"
+        "a"
+        "f";
+    }
+    .tartalom{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+tr:nth-child(odd) {
+background-color: black;
+}
+tr:nth-child(even) {
+    background-color: gray;
+    }
+table, td, th{
+    border: 1px;
+    border-color: white;
+    border-style: solid;
+}
+.color{
+    background-color: black;
+    max-width: 500px;
+    height: 180px;
+    margin: auto;
+    padding: 10px;
+    margin-right: 800px;
+}
