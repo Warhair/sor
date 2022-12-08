@@ -1,6 +1,6 @@
 body{
     box-sizing: border-box;
-    background-image: url("/design/teglafal.jpg");
+    background-image: url("design/teglafal.jpg");
     color: beige;
     font-size: 10pt;
     font-family: "Arial", Verdana, sans-serif;
@@ -30,9 +30,9 @@ nav{
     grid-area: n; 
 }
 header{
-    background-image: url("/design/beer-new_401732638.jpg");
+    background-image: url("design/beer-new_401732638.jpg");
     height: 300px;
-    overflow: auto;
+  
     background-size: cover;
     font-weight: bold;
     font-family: "Garamond";
@@ -40,13 +40,14 @@ header{
     font-size: 32px;
     letter-spacing: 4px;
     padding-top: 30px;
-    padding-left: 30px;
+    
     grid-area: h;
-    width: 100%;
+  
 }
 header h1{
     color: white;
     margin-left: 30px;
+    padding-left: 30px;
 }
 .navul li{
     list-style-type: none;
@@ -85,8 +86,10 @@ article h1{
     list-style-type: square;
 
 }
-.img{
-text-align: left;
+img{
+
+max-width: 200px;
+width: 100%;
 }
 footer{
     grid-area: f; 
@@ -123,10 +126,8 @@ table, td, th{
     border-style: solid;
 }
 .color{
-    background-color: black;
-    max-width: 500px;
     height: 180px;
     margin: auto;
     padding: 10px;
-    margin-right: 800px;
+    
 }
